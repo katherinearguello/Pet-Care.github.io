@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+header{
+    background-color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.logo img{
+    height: 100px;
+    margin-left:70px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius:  20px;
+    background-color: #c3a6db;
+    margin-right: 40px;
+}
+nav ul li a.active, nav ul li a:hover{
+    background-color: #e75480;
+    color: #fff;
+}
+/* animacion */
+.trans{
+    position: relative;
+    height: 800px;
+
+}
+.ruleta{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.rotaciones{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.rotaciones .imagen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fade 16s infinite;
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+}
+.rotaciones .imagen:nth-child(1){
+    animation-delay: 0s;
+}
+.rotaciones .imagen:nth-child(2){
+    animation-delay: 4s;
+}
+.rotaciones .imagen:nth-child(3){
+    animation-delay: 8s;
+}
+.rotaciones .imagen:nth-child(4){
+    animation-delay: 12s;
+}
+@keyframes fade{
+    0%{opacity: 0;}
+    5%{opacity: 1;}
+    25%{opacity: 1;}
+    30%{opacity: 0;}
+    100%{opacity: 0;}
+}
+.texto{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+.texto h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px; 
+    width: 600px;
+    font-weight: 200;
+}
+/* Descripcion */
+.nosotros{
+    padding: 20px;
+    background-color: #c3a6db;
+    margin: 20px ;
+    border-radius: 80px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.nosotros p{
+    width: 40%;
+    position: relative;
+    font-size: 20px;
+}
+.nosotros img{
+    position: relative;
+    width: 150px;
+}
+.nosotros p,img{
+    left: 355px;
+}
+.servicios{
+    text-align: center;
+    padding: 20px;
+}
+/* Titulo */
+ h2{
+    background-color: #c3a6db;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 30px;
+    font-weight: 500;
+}
+/* Informacion servicios */
+.servicios{
+    margin-bottom: 30px;
+    background-image: url(../img/fondoRecurso\ 17.png);
+}
+.servicio{
+    border-right: 5px solid #5a4d9f;
+    display: inline-block;
+    width: 45%;
+    padding: 10px;
+    margin: 10px;
+}
+.servicio:nth-last-of-type(1){
+    border-right:none ;
+}
+.servicio p{
+    position: relative;
+    width: 300px;
+    left: 260px;
+}
+.servicio img{
+    border-radius: 100%;
+    box-shadow: 10px 10px 15px 11px rgba(0, 0, 0, 0.2);
+}
+.servicio h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 500;
+}
+/* Pie de pagina */
+footer{
+    background-color: #c3a6db;
+    text-align: center;
+    padding: 10px;
+}
+
+/*segunda animacion*/
+.presentacion{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+.ruleta{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.rotacion{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ animation: slide 16s infinite;
+}
+.rotacion1 img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+}
+.rotacion .rotacion1{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes slide{
+    0%{ transform: translateY(0);}
+    25%{ transform: translateY(-100%);}
+    50%{transform: translateY(-200%);}
+    75%{ transform: translateY(-300%);}
+    100%{transform: translateY(0);}
+}
+.presentacion-texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}

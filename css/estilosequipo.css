@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+header{
+    background-color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    height: 100px;
+    margin-left:70px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius:  20px;
+    background-color: #c3a6db;
+    margin-right: 40px;
+}
+nav ul li a.active, nav ul li a:hover{
+    background-color: #e75480;
+    color: #fff;
+}
+h1{
+    background-color: #c3a6db;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 30px;  
+    font-weight: 200;
+}
+main{
+    padding: 20px;
+}
+.equipo-seccion{
+    display: flex;
+    justify-content: space-around;
+}
+.equipo-columna{
+    border-right: 5px solid #5a4d9f;
+    width: 35%;
+    height: 0;
+}
+.equipo-columna h2{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 200;
+}
+.equipo-miembro{
+    border-right: 5px solid #5a4d9f;
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.equipo-miembro img{
+    border-radius: 150px;
+    box-shadow: 20px 10px 15px 11px rgba(39, 147, 248, 0.2);
+}
+.miembro-informacion{
+    margin-left: 20px;
+}
+.miembro-informacion h3{
+    color: #5a4d9f;
+}
+.ff{
+    position: relative;
+    top: 80px;
+    width: 100%;
+}
+footer{
+    background-color: #c3a6db;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-top: 90px;
+
+}

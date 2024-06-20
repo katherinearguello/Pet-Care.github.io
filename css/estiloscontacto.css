@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+header{
+    background-color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.logo img{
+    height: 100px;
+    margin-left:70px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius:  20px;
+    background-color: #c3a6db;
+    margin-right: 40px;
+}
+nav ul li a.active, nav ul li a:hover{
+    background-color: #e75480;
+    color: #fff;
+}
+main{
+    padding: 20px;
+}
+.contacto{
+    text-align: center;
+}
+.contacto h2{
+    background-color: #c3a6db;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+}
+.contacto-opciones{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.contacto-opciones .opcion{
+    margin: 30px 30px;
+    text-align: center;
+}
+.contacto-opciones .opcion img{
+    width: 150px;
+    height: 150px;
+}
+.contacto-opciones .opcion p{
+    margin: 10px 0;
+}
+.contacto-opciones .opcion a{
+    text-decoration: none;
+    color: #c3a6db;
+}
+.dos{
+    display: flex;
+    align-content: center;
+    margin-top: 100px;
+}
+.perro img{
+    width: 800px;
+    height: auto;
+}
+.contacto-form-seccion {
+    background-color: #e5a0b5;
+    padding: 40px;
+    width: 1080px;
+    height: 567px;
+}
+.contacto-form-seccion h3{
+    margin-top: 0;
+    font-size: 38px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-weight: 200;
+}
+.contacto-form-seccion p{
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+
+}
+.contacto-form input, .contacto-form textarea{
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background: none;
+    border: none;
+}
+.contacto-form button{
+    width: 80%;
+    max-width: 100px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #c3a6db;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.contacto-form button:hover {
+    background-color: #c3a6db;
+}
+footer{
+    background-color: #c3a6db;
+    text-align: center;
+    padding: 10px;
+}
+

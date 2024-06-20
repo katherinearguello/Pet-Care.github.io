@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+header{
+    background-color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    height: 100px;
+    margin-left:70px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius:  20px;
+    background-color: #c3a6db;
+    margin-right: 40px;
+}
+nav ul li a.active, nav ul li a:hover{
+    background-color: #e75480;
+    color: #fff;
+}
+h2{
+    background-color: #c3a6db;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 30px;  
+    font-weight: 200;
+}
+main{
+    background-image: url(../img/fondoRecurso17.png);
+}
+.imagen-texto-seccion{
+    position: relative;
+    margin: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 90px;
+    left: 20px;
+}
+.imagen-texto{
+    text-align: center;
+    padding: 20px;
+}
+.imagen-texto img{
+    border-radius: 80px;
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+    box-shadow: 20px 10px 15px 11px rgba(39, 147, 248, 0.2);
+    transition: all 359ms ease-in;
+}
+.imagen-texto img:hover{
+    transform: rotate(0deg) scale(2.0, 2.0);
+    z-index: 10;
+}
+
+.imagen-texto h3{
+    margin-top: 13px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.ff{
+    position: relative;
+    width: 100%;
+}
+footer{
+    background-color: #c3a6db;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+
+
+}
