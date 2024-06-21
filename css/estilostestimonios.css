@@ -42,10 +42,10 @@ nav ul li a.active, nav ul li a:hover{
    width: 100%;
 }
 h2{
-    transform: translate(20%, -95%);
+    transform: translate(20%, -60%);
 }
 h2{
-    background-color: #8001e7;
+    background-color: #c3a6db;
     padding: 5px;
     border-radius: 80px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
